@@ -1,5 +1,6 @@
 **/__pycache__/
 **/plotting/
 evaluation/results/
-**/langfuse/
+**/langfuse/*.jsonl
+**/langfuse/*.json
 **/*.html
