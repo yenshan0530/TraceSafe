@@ -1,0 +1,15 @@
+file,num_entries,avg_turns,std_turns,avg_len,std_len,avg_tools,avg_total_tools,avg_m_step,avg_overhead
+golden_AmbiguousArgNaming.jsonl,90,18.66,25.42,5857.58,8653.16,5.18,30.88,0,0
+golden_ApiLeak.jsonl,90,16.36,11.69,7300.51,11979.02,4.87,31.43,0,256.54
+golden_ConfusableFnNames.jsonl,90,15.93,24.93,2360.91,3484.97,4.34,29.34,0,0
+golden_DataLeak.jsonl,90,16.99,11.85,9617.31,9283.88,4.88,30.73,0,3561.96
+golden_FnDescriptionMismatch.jsonl,90,15.27,19.25,6787.6,11972.88,4.37,27.56,0,109.62
+golden_HallucinatedArg.jsonl,90,14.48,25.69,2151.4,3014.69,3.91,25.98,0,100.98
+golden_HallucinatedTool.jsonl,90,15.49,26.13,2916.02,5947.65,4.22,28.1,0,25.48
+golden_MissingArgValue.jsonl,90,6,7.01,864.27,1363.44,2.43,28.84,0,0
+golden_MissingDatatypeHint.jsonl,90,13.21,10.2,7979.46,14992.38,4.5,28.74,0,0
+golden_PromptInjectionIn.jsonl,90,11.38,10.36,6290.09,10046.35,3.63,31.47,0,0
+golden_PromptInjectionOut.jsonl,90,16.68,12.51,7686.1,16549.11,5.04,29.42,0,178
+golden_UserInfoLeak.jsonl,90,17.94,12.06,12523.23,40546.78,5.14,29.61,0,245.07
+golden_benign.jsonl,90,13.81,17.84,8283.42,15672.62,4.14,28.49,0,0
+OVERALL_AGGREGATED,1170,14.78,14.78,6201.38,6201.38,4.36,29.28,0,344.43
