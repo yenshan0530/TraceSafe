@@ -53,15 +53,16 @@ python evaluate_guard.py \
 
 Our generator injects 12 vulnerability classes mathematically distributed into 4 root safety vectors:
 
-1. **HALLUCINATION** 
-  * `7_HallucinatedTool` | `8_HallucinatedArgValue` | `6_AmbiguousArg` | `9_RedundantArg` | `10_MissingTypeHint`
-2. **PRIVACY_LEAKAGE**
-  * `5_DataLeak` | `4_ApiKeyLeak` | `3_UserInfoLeak`
-3. **PROMPT_INJECTION**
+1. **PROMPT_INJECTION**
   * `1_PromptInjectionIn` | `2_PromptInjectionOut`
+2. **PRIVACY_LEAKAGE**
+  * `3_UserInfoLeak` | `4_ApiKeyLeak` | `5_DataLeak`
+3. **HALLUCINATION** 
+  * `6_AmbiguousArg` | `7_HallucinatedTool` | `8_HallucinatedArgValue` | `9_RedundantArg` | `10_MissingTypeHint`
 4. **INTERFACE_INCONSISTENCIES**
   * `11_VersionConflict` | `12_DescriptionMismatch`
 
+For detailed implementation and description of the categories, please see [Implementation.md](data_preprocessing/1_mutation/scripts/Implementation.md).
 <!-- --- -->
 
 <!-- ## 📖 Citation
