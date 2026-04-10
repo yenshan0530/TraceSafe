@@ -2,7 +2,14 @@
 
 **TraceSafe** is a generalized testing framework designed to robustly assess the resilience of Large Language Models (LLMs) and specialized guardrail models against adversarial, hallucinated, and ambiguous multi-step tool-calling workflows. It systematically injects security failures (e.g., API key leaks, Prompt Injections) and functional failures (e.g., execution of non-existent utilities) into conversational trajectories to benchmark the defensive capabilities of evaluating models.
 
+## ⚙️ Environment Setup
 
+To get started with **TraceSafe**, follow these steps to configure your environment: 
+```bash
+conda create -n TraceSafe python=3.12 -y
+conda activate TraceSafe
+pip install -r requirements.txt
+```
 
 ## 📂 Repository Structure
 
@@ -12,8 +19,6 @@
   * `1_mutation/`: The heart of the red-teaming engine. Recursively applies corrupted trace permutations to baselines across 12 distinct risk taxonomy classes. See the [Mutation README](data_preprocessing/1_mutation/scripts/README.md) for command-line arguments.
 * `evaluation/`: The primary benchmarking surface.
   * Contains parallelized runners to benchmark arbitrary models against the synthetic corrupted traces efficiently. Outputs detailed tabular `csv` metrics tracking overall detection accuracies. Read the [Evaluation README](evaluation/README.md) for usage arguments.
-
----
 
 ## 🚀 QuickStart: Evaluating a Model on the Benchmark
 
@@ -46,8 +51,6 @@ python evaluate_guard.py \
 ```
 
 *(Note: Execution outputs concurrent results mapping standard 'correct', 'wrong', and '.csv' statistics into your defined `--output_dir`)*
-
----
 
 ## 🦠 Risk Taxonomy Evaluated
 
