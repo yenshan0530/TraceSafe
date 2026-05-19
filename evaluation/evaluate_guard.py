@@ -31,7 +31,7 @@ init(autoreset=True)
 
 # --- CONFIG ---
 DEFAULT_INPUT_DIRS = [
-    "../data_preprocessing/1_mutation/results/golden_collection_categories"
+    "../data"
 ]
 DEFAULT_OUTPUT_DIR = "results/"
 DEFAULT_SETTINGS = [

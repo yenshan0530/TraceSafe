@@ -4,3 +4,9 @@ evaluation/results/
 **/langfuse/*.jsonl
 **/langfuse/*.json
 **/*.html
+
+# Local-only audit / one-off scripts
+data_preprocessing/1_mutation/audit/
+
+# Deprecated dataset snapshot — kept on disk for local reference only
+data/golden_0_benign_deprecated.jsonl

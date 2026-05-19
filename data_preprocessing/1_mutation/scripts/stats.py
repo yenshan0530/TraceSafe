@@ -7,7 +7,7 @@ from collections import defaultdict
 def main():
     base_dir = os.path.join(
         os.path.dirname(__file__),
-        '../results/golden_collection_categories'
+        '../../../data'
     )
     base_dir = os.path.abspath(base_dir)
 

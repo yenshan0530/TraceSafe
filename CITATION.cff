@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+title: "TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories"
+message: "If you use TraceSafe-Bench or this codebase, please cite the paper below."
+type: software
+authors:
+  - family-names: Chen
+    given-names: Yen-Shan
+  - family-names: Huang
+    given-names: Sian-Yao
+  - family-names: Yang
+    given-names: Cheng-Lin
+  - family-names: Chen
+    given-names: Yun-Nung
+repository-code: "https://github.com/cycraft-corp/TraceSafe"
+url: "https://huggingface.co/datasets/CyCraftAI/TraceSafe"
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories"
+  authors:
+    - family-names: Chen
+      given-names: Yen-Shan
+    - family-names: Huang
+      given-names: Sian-Yao
+    - family-names: Yang
+      given-names: Cheng-Lin
+    - family-names: Chen
+      given-names: Yun-Nung
+  year: 2026
+  url: "https://arxiv.org/abs/2604.07223"

@@ -110,7 +110,7 @@ def analyze_file(file_path):
 
 def main():
     # Adjust path according to your environment
-    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../results/golden_collection_categories'))
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../data'))
     
     results = []
     if not os.path.exists(base_dir):

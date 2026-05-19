@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # --- CONFIGURATION ---
 ROOT_DIR = "../results/raw_mutated_categories"
-OUTPUT_DIR = "../results/golden_collection_categories"
+OUTPUT_DIR = "../../../data"
 MODELS_TO_INCLUDE = ["gemini-3-flash-preview", "gpt-5-mini-2025-08-07", "mistral-14b", "qwen", "toolace-8b"]
 SAMPLES_PER_CATEGORY = 90
 BENIGN_SAMPLES_COUNT = 90  # How many benign samples you want

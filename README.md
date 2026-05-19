@@ -1,15 +1,30 @@
 # TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories
 
+> Yen-Shan Chen, Sian-Yao Huang, Cheng-Lin Yang, Yun-Nung Chen
+>
+> 📄 **Paper:** [arXiv:2604.07223](https://arxiv.org/abs/2604.07223)  ·  📦 **Dataset (TraceSafe-Bench):** [CyCraftAI/TraceSafe](https://huggingface.co/datasets/CyCraftAI/TraceSafe)
+
 **TraceSafe** is a generalized testing framework designed to robustly assess the resilience of Large Language Models (LLMs) and specialized guardrail models against adversarial, hallucinated, and ambiguous multi-step tool-calling workflows. It systematically injects security failures (e.g., API key leaks, Prompt Injections) and functional failures (e.g., execution of non-existent utilities) into conversational trajectories to benchmark the defensive capabilities of evaluating models.
 
 ## ⚙️ Environment Setup
 
-To get started with **TraceSafe**, follow these steps to configure your environment: 
+To get started with **TraceSafe**, follow these steps to configure your environment:
 ```bash
 conda create -n TraceSafe python=3.12 -y
 conda activate TraceSafe
 pip install -r requirements.txt
 ```
+
+## 📥 Download the Benchmark Data
+
+The TraceSafe-Bench golden collection (1,170 records across 12 risk categories + benign) is hosted on Hugging Face as a **gated** dataset. Request access at [CyCraftAI/TraceSafe](https://huggingface.co/datasets/CyCraftAI/TraceSafe), then run:
+
+```bash
+huggingface-cli login   # once, paste a token with read access
+python data_preprocessing/download_data.py
+```
+
+This populates the top-level `data/` directory with the 13 `golden_*.jsonl` files that the evaluation scripts expect. Note: `data/` is the local mirror of the HuggingFace dataset — the canonical source is the gated repo above.
 
 ## 📂 Repository Structure
 
@@ -66,12 +81,22 @@ Our generator injects 12 vulnerability classes mathematically distributed into 4
   * `11_VersionConflict` | `12_DescriptionMismatch`
 
 For detailed implementation and description of the categories, please see [Implementation.md](data_preprocessing/1_mutation/scripts/Implementation.md).
-<!-- --- -->
 
-<!-- ## 📖 Citation
+## 📖 Citation
 
-If you find this dataset or benchmark useful in your research, please consider citing our work:
+If you find TraceSafe-Bench useful in your research, please cite our work:
 
 ```bibtex
+@misc{chen2026tracesafe,
+  title         = {TraceSafe: A Systematic Assessment of LLM Guardrails on Multi-Step Tool-Calling Trajectories},
+  author        = {Chen, Yen-Shan and Huang, Sian-Yao and Yang, Cheng-Lin and Chen, Yun-Nung},
+  year          = {2026},
+  eprint        = {2604.07223},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2604.07223}
+}
+```
 
-``` -->
+## 📜 License
+
+Released under the [Apache License 2.0](LICENSE). Source baseline traces are derived from BFCL (Apache-2.0); mutations and curation are released under the same license.

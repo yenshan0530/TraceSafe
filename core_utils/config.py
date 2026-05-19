@@ -10,7 +10,9 @@ EVALUATION_DIR = REPO_ROOT / "evaluation"
 
 TRACE_GEN_RESULTS_DIR = DATA_PREPROCESSING_DIR / "0_trace_generation" / "results"
 MUTATION_RESULTS_DIR = DATA_PREPROCESSING_DIR / "1_mutation" / "results"
-GOLDEN_COLLECTION_DIR = MUTATION_RESULTS_DIR / "golden_collection_categories"
+# The published golden dataset lives at top-level data/ — it mirrors the
+# HuggingFace dataset at CyCraftAI/TraceSafe.
+GOLDEN_COLLECTION_DIR = REPO_ROOT / "data"
 
 EVAL_RESULTS_DIR = EVALUATION_DIR / "results"
 

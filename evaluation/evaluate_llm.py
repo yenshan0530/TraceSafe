@@ -20,7 +20,7 @@ init(autoreset=True)
 # --- CONFIG ---
 DEFAULT_MODEL_NAME = "gpt-oss-120b"
 INPUT_DIRS = [
-    "../data_preprocessing/1_mutation/results/golden_collection_categories"
+    "../data"
 ]
 DEFAULT_OUTPUT_DIR = "results/"
 DEFAULT_SETTINGS = [
